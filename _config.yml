@@ -6,7 +6,7 @@
 name: Abu Zayd
 
 # Short bio or description (displayed in the header)
-description: Ordinary man from Kozhikode
+description: Scribbling sense as it unwraps
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: 
@@ -18,7 +18,7 @@ avatar:
 # Social
 social:
   - title: e-mail
-    icon: paper-plain
+    icon: envelope
     url: mailto:abu@zayd.in
   - title: twitter
     icon: twitter
@@ -63,7 +63,7 @@ baseurl: ""
 
 markdown: kramdown
 highlighter: pygments
-permalink: /:title/
+permalink: date
 
 # The release of Jekyll Now that you're using
 version: v1.0.0

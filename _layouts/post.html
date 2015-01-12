@@ -1,17 +1,37 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+	<body>
+		{% include header.html %}
+		{% include post-banner.html %}
+		<div style="height= 50px;"></div>
+			<!-- Page Content -->
+			<!-- for post in site.posts reversed  -->
 
-  <div class="entry">
-    {{ content }}
-  </div>
+			    <div class="content-section-a">
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+			        <div class="container">
 
-  {% include disqus.html disqus_identifier=page.disqus_identifier %}
-</article>
+			            <div class="row">
+			                <div class="col-lg-5 col-sm-6">
+			                    <hr class="section-heading-spacer">
+			                    <div class="clearfix"></div>
+			                    <h2 class="section-heading">{{ page.title }}</h2>
+			                    <h3>{{ page.description }}</h3>
+			                    {{ page.content }}
+			                </div>
+			                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+			                    <img class="img-responsive" src="{{ site.baseurl }}/img/post-thumbnails/{{ page.img }}" alt="">
+			                </div>
+			            </div>
+
+			        </div>
+			        <!-- /.container -->
+
+			    </div>
+		<!-- include contact.html -->
+		{% include footer.html %}
+		{% include js.html %}
+	</body>
+</html> 

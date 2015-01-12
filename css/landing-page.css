@@ -17,10 +17,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Lato", "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
-
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 1.48em;
+}
 .lead {
     font-size: 18px;
     font-weight: 400;
@@ -33,6 +37,11 @@ h6 {
     color: #f8f8f8;
     background: url(../img/intro-bg.jpg) no-repeat center center;
     background-size: cover;
+}
+
+.single {
+    height: 15em;
+    box-shadow: 0px 0px 50px 1px #111 inset;
 }
 
 .intro-message {
