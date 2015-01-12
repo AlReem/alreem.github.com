@@ -1,0 +1,20 @@
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="list-inline">
+                    {% for page in site.pages %}
+                        {% if page.title != nil and page.url != '/' and page.url != '/404.html' and page.url != '/index.html' %}
+                            <li><a href="{{ page.url }}">{{ page.title }}</a></li><li class="footer-menu-divider">&sdot;</li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                <p class="copyright text-muted small">Copyright &copy; {{ site.title }} All Rights Reserved</p>
+            </div>
+            <div class="col-md-4">
+                <a href="mailto:{{ site.footer-links.email }}">Email me</a>
+            </div>
+        </div>
+    </div>
+</footer>
